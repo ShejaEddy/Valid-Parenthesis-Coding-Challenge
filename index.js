@@ -13,7 +13,7 @@ var isValid = function (enteredValue) {
   // Check if the string is not even
   if (enteredValue.length % 2 != 0) return false;
 
-  // Check if no value has been entered
+  // Check if no value has been entered from the string parameter
   if (enteredValue.length == 0) return true;
 
   // Check if there is any entered value not matching the required ones
