@@ -10,9 +10,14 @@ const fromClosingSigns = {
 };
 
 var isValid = function (enteredValue) {
+  // Check if the string is not even
   if (enteredValue.length % 2 != 0) return false;
 
+  // Check if no value has been entered
   if (enteredValue.length == 0) return true;
+
+  // Check if there is any entered value not matching the required ones
+  if (!enteredValue.match(/[\{\}\[\]\(\)]/)) return false;
 
   var copiedValue = enteredValue;
 
